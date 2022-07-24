@@ -99,9 +99,9 @@ public class CharHash {
         integerMap.put(7, "7");
         integerMap.put(8, "8");
         integerMap.put(9, "9");
-        integerMap.put(0, "0");
+        integerMap.put(10, "0");
         
-        randNum = rand.nextInt(0, 10);
+        randNum = rand.nextInt(1, 11);
         num = integerMap.get(randNum);
         
         return num;
@@ -117,14 +117,14 @@ public class CharHash {
         
         HashMap<Integer, String> symbolMap = new HashMap<Integer, String>();
 
-        symbolMap.put(0, "_");
-        symbolMap.put(1, "!");
-        symbolMap.put(2, "@");
-        symbolMap.put(3, "#");
-        symbolMap.put(4, "$");
-        symbolMap.put(5, "%");
+        symbolMap.put(1, "_");
+        symbolMap.put(2, "!");
+        symbolMap.put(3, "@");
+        symbolMap.put(4, "#");
+        symbolMap.put(5, "$");
+        symbolMap.put(6, "%");
 
-        num = rand.nextInt(0, 6);
+        num = rand.nextInt(1, 7);
         symbol = symbolMap.get(num);
         
         return symbol;
